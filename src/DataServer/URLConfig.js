@@ -2,47 +2,47 @@ const host = 'http://60.205.141.116:'
 const port = 60004;
 
 const CommodityTypeURL = host+port+'/api/CommodityType';
-const GoodsInformation = host+port+'/api/GoodsInformation';
-const GoodsXiangXiInformation = host+port+'/api/GoodsXiangXiInformation';
+const GoodsInformationURL = host+port+'/api/GoodsInformation';
+const GoodsXiangXiInformationURL = host+port+'/api/GoodsXiangXiInformation';
 
 
-const Register = host+port+'/api/user/Register';
-const Login = host+port+'/api/user/Login';
-const userUpdate = host+port+'/api/user/Update';
+const RegisterURL = host+port+'/api/user/Register';
+const LoginURL = host+port+'/api/user/Login';
+const userUpdateURL = host+port+'/api/user/Update';
 
 
-const CollectAddressAdd = host+port+'/api/CollectAddress/Add';
-const CollectAddressUpdate = host+port+'/api/CollectAddress/Update';
-const CollectAddressDelete = host+port+'/api/CollectAddress/Delete';
-const CollectAddressget = host+port+'/api/CollectAddress/get';
+const CollectAddressAddURL = host+port+'/api/CollectAddress/Add';
+const CollectAddressUpdateURL = host+port+'/api/CollectAddress/Update';
+const CollectAddressDeleteURL = host+port+'/api/CollectAddress/Delete';
+const CollectAddressgetURL = host+port+'/api/CollectAddress/get';
 
 
 
-const Order = host+port+'/api/Order/Order';
-const OrderSearch = host+port+'/api/Order/Search';
-const OrderReceive = host+port+'/api/Order/Receive';
-const OrderComment = host+port+'/api/Order/Comment';
+const OrderURL = host+port+'/api/Order/Order';
+const OrderSearchURL = host+port+'/api/Order/Search';
+const OrderReceiveURL = host+port+'/api/Order/Receive';
+const OrderCommentURL = host+port+'/api/Order/Comment';
 
 
 
 export {
     CommodityTypeURL,
-    GoodsInformation,
-    GoodsXiangXiInformation,
+    GoodsInformationURL,
+    GoodsXiangXiInformationURL,
     
     
-    Register,
-    Login,
-    userUpdate,
+    RegisterURL,
+    LoginURL,
+    userUpdateURL,
 
-    CollectAddressAdd,
-    CollectAddressUpdate,
-    CollectAddressDelete,
-    CollectAddressget,
+    CollectAddressAddURL,
+    CollectAddressUpdateURL,
+    CollectAddressDeleteURL,
+    CollectAddressgetURL,
 
-    Order,
-    OrderSearch,
-    OrderReceive,
-    OrderComment,
+    OrderURL,
+    OrderSearchURL,
+    OrderReceiveURL,
+    OrderCommentURL,
 
 }
