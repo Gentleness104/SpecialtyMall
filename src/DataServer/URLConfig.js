@@ -1,13 +1,13 @@
-const host = 'http://60.205.141.116:'
-const port = 60004;
+const host = 'http://localhost:'
+const port = 61041;
 
 const CommodityTypeURL = host+port+'/api/CommodityType';
 const GoodsInformation = host+port+'/api/GoodsInformation';
 const GoodsXiangXiInformation = host+port+'/api/GoodsXiangXiInformation';
 
 
-const Register = host+port+'/api/user/Register';
-const Login = host+port+'/api/user/Login';
+const registerURL = host+port+'/api/user/Register';
+const loginURL = host+port+'/api/user/Login';
 const userUpdate = host+port+'/api/user/Update';
 
 
@@ -31,8 +31,8 @@ export {
     GoodsXiangXiInformation,
     
     
-    Register,
-    Login,
+    loginURL,
+    registerURL,
     userUpdate,
 
     CollectAddressAdd,
