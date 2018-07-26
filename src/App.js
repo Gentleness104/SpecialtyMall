@@ -7,13 +7,14 @@ import { Button } from 'antd-mobile';
 // import LoginScreen from './Screen/LoginScreen';
 // import RegisterScreen from './Screen/RegisterScreen';
 import HomeScreen from './Screen/HomeScreen';
+import MessageUpdateScreen from './Screen/MessageUpdateScreen';
 
 
 class App extends Component {
   render() {
     return (
        <div>
-           <Route exact path={'/'}  component={HomeScreen} />
+           <Route exact path={'/'}  component={MessageUpdateScreen} />
            {/* <Route path={'/RegisterScreen'} component={RegisterScreen} />
            <Route path={'/HomeScreen'} component={HomeScreen} /> */}
        </div>
