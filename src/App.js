@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
        <div>
-           <Route exact path={'/'}  component={MessageUpdateScreen} />
+           <Route  path={'/MessageUpdateScreen'}  component={MessageUpdateScreen} />
            {/* <Route path={'/RegisterScreen'} component={RegisterScreen} />
            <Route path={'/HomeScreen'} component={HomeScreen} /> */}
        </div>
