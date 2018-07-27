@@ -10,38 +10,7 @@ import ReactDOM from 'react-dom';
 
 
 const data = [
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '水果'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '蔬菜'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '肉食'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '零食'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '调料'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '海鲜'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '饮料'
-    },
-    {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
-        text: '乳制品'
-    },
+    
 ]
 
 const data1= Array.from(new Array(8)).map(() => ({
@@ -50,10 +19,22 @@ const data1= Array.from(new Array(8)).map(() => ({
 
 export default class GoodsScreen extends Component {
 
-    state = {
+    constructor(props) {
+      super(props)
+    
+      this.state ={
         data: ['1', '2', '3'],
         imgHeight: 176,
       }
+    }
+    
+
+    // state = {
+    //     data: ['1', '2', '3'],
+    //     imgHeight: 176,
+    //   }
+
+
       componentDidMount() {
         // simulate img loading
         setTimeout(() => {
@@ -147,20 +128,20 @@ export default class GoodsScreen extends Component {
                         
                         placeholder={'商品名称'}
                     >
-                        商品名称
+                        商品名称：
                     </InputItem>
                     <InputItem
                         type={'text'}
                         
                         placeholder={'商品其他信息'}
                     >
-                        商品其他信息
+                        价格：
                     </InputItem>
                 </List>
                 <WhiteSpace/>
                 <WhiteSpace />
                 <Button
-                 style={{ marginTop: '340px' }}
+                 style={{ marginTop: '368px' }}
                 type={'primary'}
                 onClick={()=>{
                     this.props.history.push('/SetAddressScreen');
