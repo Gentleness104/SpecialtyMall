@@ -21,23 +21,19 @@ import userManager from '../DataServer/UserManager';
 
 export default class SetAddressScreen extends Component {
 
-    // componentDidMount(){
-    //     if(userManager.isLogin() === false){
-    //         this.props.history.replace('/');
-    //     }
-    // }
 
     constructor(props) {
       super(props)
     
       this.state = {
         name:'',
-        phone:''
+        phone:'',
+        addr:[]
       }
     }
 
   render() {
-    const { getFieldProps } = this.props.form;
+    
     return (
       <div>
         <NavBar
@@ -65,22 +61,15 @@ export default class SetAddressScreen extends Component {
             <Picker extra="请选择(可选)"
             data={district}
             title="Areas"
-            {...getFieldProps('district', {
-                initialValue: ['340000', '341500', '341502'],
-            })}
+            value={this.state.addr}
+            onChange={(addr)=>{this.setState({addr})}}
             onOk={e => console.log('ok', e)}
             onDismiss={e => console.log('dismiss', e)}
             >
-            <List.Item arrow="horizontal">Multiple & cascader</List.Item>
+            <List.Item arrow="horizontal">地区：</List.Item>
             </Picker>
 
-            {/* <InputItem
-                type={'text'}
-                value={this.state.phone}
-                onChange={(phone)=>{this.setState({phone})}}
-            >
-                地区：
-            </InputItem> */}
+           
             <InputItem
                 type={'text'}
                 value={this.state.phone}
