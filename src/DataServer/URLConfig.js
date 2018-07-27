@@ -37,15 +37,15 @@ export {
     registerURL,
     userUpdate,
 
-    CollectAddressAdd,
-    CollectAddressUpdate,
-    CollectAddressDelete,
-    CollectAddressget,
+    // CollectAddressAdd,
+    // CollectAddressUpdate,
+    // CollectAddressDelete,
+    // CollectAddressget,
 
-    Order,
-    OrderSearch,
-    OrderReceive,
-    OrderComment,
+    // Order,
+    // OrderSearch,
+    // OrderReceive,
+    // OrderComment,
 
     userUpdateURL,
 
